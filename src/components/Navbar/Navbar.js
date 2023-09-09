@@ -1,11 +1,38 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import './Navbar.css'
 
+export default function Navbar() {
+  
+  const path = window.location.pathname;
 
-<nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-white text-xl font-semibold">Home</a>
-        <div class="space-x-4">
-            <a href="#" class="text-gray-300 hover:text-white">About</a>
-            <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+  return (
+    <>
+      <nav className="bg-gray-900 p-3 px-10">
+        <div className="container mx-auto flex justify-between items-center">
+          <Link to="#" className="text-white text-xl font-semibold">
+            Portfolio
+          </Link>
+          <div className="space-x-20">
+            <Link to="/"  className={path==='/' ? 'active' : 'text-gray-300 hover:text-white'}>
+              Home
+            </Link>
+            <Link to="/about" className={path==='/about' ? 'active' : 'text-gray-300 hover:text-white'}>
+              About
+            </Link>
+            <Link to="/projects" className={path==='/projets' ? 'active' : 'text-gray-300 hover:text-white'}>
+              Projects
+            </Link>
+            <Link to="/skills" className={path==='/skills' ? 'active' : 'text-gray-300 hover:text-white'}>
+              Skills
+            </Link>
+            <Link to="/contact" className={path==='/contact' ? 'active' : 'text-gray-300 hover:text-white'}>
+              Contact
+            </Link>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
+    </>
+  );
+}
+
