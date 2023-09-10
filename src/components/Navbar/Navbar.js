@@ -63,6 +63,9 @@ export default function Navbar() {
             <Link to="/skills" className={getActiveClass('/skills')}>
               Skills
             </Link>
+            <Link to="/experience" className={getActiveClass('/skills')}>
+              Experience
+            </Link>
             <Link to="/contact" className={getActiveClass('/contact')}>Contact</Link>
           </div>
         </div>
