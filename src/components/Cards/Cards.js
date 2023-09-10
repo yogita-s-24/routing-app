@@ -13,7 +13,7 @@ export default function Cards(props) {
                     <p className="card-text text-center">{description}</p>
                     <div className='flex justify-between mt-3'>
                   <Link to={githubUrl} className="btn btn-dark">
-                    <Button btnName="Github Code"/>
+                    <Button btnName="Github Url"/>
                   </Link>
                     <Link to={liveUrl} className="btn btn-dark ">
                         <Button btnName="Live Demo"/>
