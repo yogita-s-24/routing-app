@@ -27,6 +27,9 @@ export default function Projects() {
      />
     </div>
 
+    <h1 className='fs-1 text-center mt-6'>Mini Projects</h1>
+
+
     </>
   )
 }

@@ -1,0 +1,13 @@
+.about-container{
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.para{
+    font-size: 25px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
